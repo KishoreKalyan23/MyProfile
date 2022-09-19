@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Java : Palindrome </title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../../Style/materialdesignicons.min.css">
+ 
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../../Style/style.css">
+    <link rel="stylesheet" href="../../../Style/css.css">
+
+
+ <!-- partial -->
+   
+        <div class="content-wrapper">
+     
+              <div class="container-fluid ">
+          
+               
+          
+                  <!-- Title -->
+                  <h2 class="text-center font-weight-bold">Palindrome in Java</h2>
+<div class="card">
+<div class="card-body">
+                  <!-- Description -->
+                  <p>Palindrome number in java: A palindrome number is a number that is same after reverse. For example 545, 151, 34543, 343, 171, 48984 are the palindrome numbers. It can also be a string like LOL, MADAM etc.
+                  </p>
+         <h3 class="text-center font-weight-bold">Palindrome number algorithm :</h3>
+          <ul>
+          <li>Get the number to check for palindrome</li>
+          <li>Hold the number in temporary variable</li>
+          <li>Reverse the number</li>
+          <li>Compare the temporary number with reversed number</li>
+          <li>If both numbers are same, print "palindrome number"</li>
+          <li>Else print "not palindrome number"</li>
+          
+
+
+          </ul>
+</div>
+</div>          
+          
+               
+          
+                <hr class="my-4">
+          
+                <!-- Section: -->
+                <section>
+          
+                  <!-- Title -->
+                  <h4 class="mb-4 dark-grey-text font-weight-bold">1. Palindrome Number Program in Java </h4>
+               </h4>
+              
+               
+                  <pre class="code-codebar">
+                      <font color ="color:blue">
+ class Palindrome{  
+
+ public static void main(String args[]){  
+
+  int r,sum=0,temp;    
+
+  int n=14677641;//It is the number variable to be checked for palindrome  
+
+  
+
+  temp=n;    
+
+  while(n>0){    
+
+   r=n%10;  //getting remainder  
+
+   sum=(sum*10)+r;    
+
+   n=n/10;    
+
+  }    
+
+  if(temp==sum)    
+
+   System.out.println(n+"is a palindrome number ");    
+
+  else    
+
+   System.out.println(n+"is not palindrome");    
+
+}  
+
+}  
+
+
+</font>
+                    </pre>
+<hr>
+                  <h5 class="mb-4 dark-grey-text font-weight-bold">Output :- </h3>
+                 
+          
+<div class="card">
+<div class="card-body">
+ 14677641 is a palindrome number
+</div>
+</div>
+          
+                  <hr class="my-4">
+          
+                 
+            
+                    <!-- Title -->
+                    <h4 class="mb-4 dark-grey-text font-weight-bold">2. Palindrome Program for string and numbers in Java </h4>
+                
+               
+                      <pre class="code-codebar syntaxhighlighter ">
+                      <font color ="color:blue">
+import java.util.*;   
+class Palindrome
+{  
+   public static void main(String args[])  
+   {  
+      String original, reverse = ""; // Objects of String class  
+      Scanner in = new Scanner(System.in);   
+      System.out.println("Enter a string/number to check if it is a palindrome");  
+      original = in.nextLine();   
+      int length = original.length();   
+      for ( int i = length - 1; i >= 0; i-- )  
+         reverse = reverse + original.charAt(i);  
+      if (original.equals(reverse))  
+         System.out.println("Entered string/number is a palindrome.");  
+      else  
+         System.out.println("Entered string/number isn't a palindrome.");   
+   }  
+}  
+</font> 
+                      </pre>
+                   <hr>
+                    
+                    
+          
+          
+              </div>
+          
+              </div>
+            </div>
+            
+        
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+       <!-- container-scroller -->
+       <script src="../../style/vendors/js/vendor.bundle.base.js"></script>
+       <script src="../../../../js/misc.js"></script>
