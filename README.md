@@ -3,4 +3,4 @@ Hey Guys..
    - And the above mention Programes are developed me and not copied from other resorces..
     
 Webpage Link :-
-       https://kishorekalyan23.github.io/MyProfile.github.io/
+       https://kishorekalyan23.github.io/MyProfile/
